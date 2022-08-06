@@ -1,8 +1,8 @@
-import data from "./data/data";
+import { FC } from "react";
 import Pokegame from "./components/pokegame/Pokegame";
 import "./App.css";
 
-function App() {
+const App: FC = () => {
 	return (
 		<div className="App">
 			<h1>Pokedex</h1>
@@ -11,6 +11,6 @@ function App() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;

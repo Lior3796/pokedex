@@ -26,14 +26,15 @@
 }
 .pokecard-img {
   height: 100px;
+  background-color: white;
 }
-.score{
+.pokedex-score{
   width: 100%;
 }
-.win{
+.pokedex-win{
   color: green;
 }
-.lose{
+.pokedex-lose{
   color: red;
 }
 

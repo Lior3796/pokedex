@@ -1,6 +1,6 @@
-import React, { FC, useEffect } from "react";
-import { pokecard } from "../../types/pokecard";
-import { addZeroToId } from "../../helpers/addZeroToId";
+import { FC } from "react";
+import pokecard from "../../types/pokecard";
+import addZeroToId from "../../helpers/addZeroToId";
 
 const Pokecard: FC<pokecard> = (pokecardData: pokecard) => {
 	const { id, name, type, base_experience } = pokecardData;

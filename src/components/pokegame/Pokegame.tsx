@@ -1,10 +1,10 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import data from "../../data/data";
 import Pokedex from "../pokedex/Pokedex";
-import { pokecard } from "../../types/pokecard";
+import pokecard from "../../types/pokecard";
 
 const Pokegame: FC = () => {
-	const shuffle = () => {
+	const shuffle: Function = (): Array<pokecard> => {
 		const shufflePokes = [];
 		for (let index = 0; index < 4; index++) {
 			shufflePokes.push(data[Math.floor(Math.random() * 7)]);
@@ -17,6 +17,7 @@ const Pokegame: FC = () => {
 	const firstHandScore: number = firstHand
 		.map((item) => item.base_experience)
 		.reduce((prev, curr) => prev + curr, 0);
+
 	const secondHandScore: number = secondHand
 		.map((item) => item.base_experience)
 		.reduce((prev, curr) => prev + curr, 0);

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { pokecard } from "../../types/pokecard";
+import pokecard from "../../types/pokecard";
 import Pokecard from "../pokecard/Pokecard";
-import { shufflePokes } from "../../types/pokecard";
+
 interface Props {
 	shufflePokes: pokecard[];
 	score: number;
